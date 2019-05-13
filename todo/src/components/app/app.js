@@ -42,7 +42,7 @@ export default class App extends Component {
     };
 
     addItem = (text) => {
-
+        if (text !== '') {
         const newItem = this.createTodoItem(text);
 
         this.setState(({ todoData }) => {
@@ -56,6 +56,7 @@ export default class App extends Component {
                 todoData: newArr
             }
         });
+    }
     };
 
     toggleProperty(arr, id, propName) {

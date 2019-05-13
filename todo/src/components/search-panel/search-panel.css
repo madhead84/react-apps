@@ -3,3 +3,7 @@
     flex-grow: 1;
     margin-right: 3px;
 }
+
+.item-add-form .form-control {
+    width: 75%;
+}
